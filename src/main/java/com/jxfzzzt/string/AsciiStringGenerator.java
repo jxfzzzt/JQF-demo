@@ -1,8 +1,9 @@
-package com.jxfzzzt;
+package com.jxfzzzt.string;
 
 import com.pholser.junit.quickcheck.generator.java.lang.AbstractStringGenerator;
 import com.pholser.junit.quickcheck.random.SourceOfRandomness;
 
+// 生成待测试的String生成器
 public class AsciiStringGenerator extends AbstractStringGenerator {
     @Override
     protected int nextCodePoint(SourceOfRandomness sourceOfRandomness) {

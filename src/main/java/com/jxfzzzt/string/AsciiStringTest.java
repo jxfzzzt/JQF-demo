@@ -1,4 +1,4 @@
-package com.jxfzzzt;
+package com.jxfzzzt.string;
 
 import com.pholser.junit.quickcheck.From;
 import edu.berkeley.cs.jqf.fuzz.Fuzz;
@@ -16,7 +16,7 @@ import static org.junit.Assume.assumeTrue;
 
 @Slf4j
 @RunWith(JQF.class)
-public class JQFTest {
+public class AsciiStringTest {
 
     @Fuzz
     public void testCopy(Map<String, Integer> map, String key) {
