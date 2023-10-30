@@ -3,4 +3,4 @@
 cd ~/java_projects/JQF-demo/
 mvn clean
 mvn package
-mvn jqf:fuzz -Dclass=com.jxfzzzt.demo.CalendarTest -Dmethod=testLeapYear -Dtime=10s
+mvn jqf:fuzz -Dclass=com.jxfzzzt.myself.MyselfObjectTest -Dmethod=testAge -Dtime=10s
