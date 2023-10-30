@@ -59,7 +59,8 @@ class CalendarLogic {
 // 测试主方法
 @RunWith(JQF.class)
 public class CalendarTest {
-    @Fuzz()
+    // 需要先把failure corpus生成出来
+    @Fuzz(repro = "target/classes/fuzz-results/failures/id_000000")
     public void testLeapYear(@From(CalendarGenerator.class) GregorianCalendar calendar) {
         assumeTrue(calendar.get(MONTH) == FEBRUARY);
         assumeTrue(calendar.get(DAY_OF_MONTH) == 29);
